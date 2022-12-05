@@ -7,16 +7,18 @@
 
 <body>
     <div>
-        <input>
-        <button onclick="document.getElementById('textarea1').style.fontWeight = 'bold'">bold</button>
-        <button italic>italic</button>
-        <button la>la</button>
-        <button ca>ca</button>
-        <button ra>ra</button>
-        <button uppercase>uppercase</button>
-        <button lowercase>lowercase</button>
-        <button capitalized>capitalized</button>
-        <button cleartext>cleartext</button>
+        <button onclick="document.getElementById('textarea1').style.fontWeight ='bold'">bold</button>
+        <button onclick="document.getElementById('textarea1').style.fontStyle ='italic'">italic</button>
+        <button onclick="document.getElementById('textarea1').style.textAlign ='left'">la</button>
+        <button onclick="document.getElementById('textarea1').style.textAlign ='center'">ca</button>
+        <button onclick="document.getElementById('textarea1').style.textAlign ='right'">ra</button>
+        <button onclick="document.getElementById('textarea1').style.textTransform ='uppercase'">uppercase</button>
+        <button onclick="document.getElementById('textarea1').style.textTransform ='lowercase'">lowercase</button>
+        <button onclick="document.getElementById('textarea1').style.textTransform ='capitalized'">capitalized</button>
+        <button onclick="document.getElementById('textarea1').style.textTransform ='cleartext'">cleartext</button>
+    </div>
+    <div>
+        <input id="textarea1" type="textarea" placeholder="Enter your text here" cols="70" rows="20">
     </div>
 </body>
 </html>
