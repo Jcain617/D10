@@ -3,19 +3,55 @@
     <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <meta http-eqviv="X-UA-Compatible" content="ie-edge">
+        <script>
+            function bold() {
+                document.getElementById('textarea1').style.fontWeight ='bold'
+            }
+
+            function italic() {
+                document.getElementById('textarea1').style.fontStyle ='italic'
+            }
+
+            function left() {
+                document.getElementById('textarea1').style.textAlign ='left'
+        }
+            function center() {
+                document.getElementById('textarea1').style.textAlign ='center'
+            }
+
+            function right() {
+                document.getElementById('textarea1').style.textAlign ='right'
+            }
+
+            function uppercase() {
+                document.getElementById('textarea1').style.textTransform ='uppercase'
+        }
+
+            function lowercase() {
+                document.getElementById('textarea1').style.textTransform ='lowercase'
+            }
+
+            function capitalize() {
+                document.getElementById('textarea1').style.textTransform ='capitalize'
+            }
+
+            function cleartext() {
+                document.getElementById('textarea1').value=''
+            }
+        </script>
 <head></head>
 
 <body>
     <div>
-        <button onclick="document.getElementById('textarea1').style.fontWeight ='bold'">bold</button>
-        <button onclick="document.getElementById('textarea1').style.fontStyle ='italic'">italic</button>
-        <button onclick="document.getElementById('textarea1').style.textAlign ='left'">la</button>
-        <button onclick="document.getElementById('textarea1').style.textAlign ='center'">ca</button>
-        <button onclick="document.getElementById('textarea1').style.textAlign ='right'">ra</button>
-        <button onclick="document.getElementById('textarea1').style.textTransform ='uppercase'">uppercase</button>
-        <button onclick="document.getElementById('textarea1').style.textTransform ='lowercase'">lowercase</button>
-        <button onclick="document.getElementById('textarea1').style.textTransform ='capitalized'">capitalized</button>
-        <button onclick="document.getElementById('textarea1').style.textTransform ='cleartext'">cleartext</button>
+        <button onclick="bold()">bold</button>
+        <button onclick="italic()">italic</button>
+        <button onclick="left()">la</button>
+        <button onclick="center()">ca</button>
+        <button onclick="right()">ra</button>
+        <button onclick="uppercase()">uppercase</button>
+        <button onclick="lowercase()">lowercase</button>
+        <button onclick="capitalize()">capitalized</button>
+        <button onclick="cleartext()">cleartext</button>
     </div>
     <div>
         <input id="textarea1" type="textarea" placeholder="Enter your text here" cols="70" rows="20">
